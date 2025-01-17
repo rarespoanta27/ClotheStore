@@ -1,0 +1,354 @@
+/* General Styles */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(135deg, #f8f5f2, #e8dfd7);
+}
+
+.add-product-link {
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-product-link:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.add-product-link:active {
+  background-color: #1e7e34;
+  transform: translateY(0);
+}
+
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+  background-color: #d2bba3;
+  color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffe8d6;
+}
+
+.navbar .login-link {
+  padding: 0.5rem 1rem;
+  background-color: #c09b80;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar .login-link:hover {
+  background-color: #b84d2b;
+  transform: translateY(-3px);
+}
+
+/* User and Cart Icons */
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  position: relative;
+}
+
+.user-actions span {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon:hover {
+  color: #ffe8d6;
+  transform: scale(1.1);
+}
+
+/* Dropdown Menu */
+.user-icon-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #d2bba3;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.3s ease;
+}
+
+.dropdown-menu button,
+.dropdown-menu a {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  text-align: left;
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: #4f4f4f;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.dropdown-menu a {
+  color: #d2bba3;
+}
+
+.dropdown-menu button:hover,
+.dropdown-menu a:hover {
+  background-color: #f8f5f2;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #fff8f2, #f4ebe2);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #6e4e37;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.search-form input {
+  padding: 0.7rem;
+  width: 60%;
+  max-width: 400px;
+  border: 1px solid #c9b4a3;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  background-color: #f8f5f2;
+}
+
+.search-form button {
+  padding: 0.7rem 1.2rem;
+  background-color: #d2bba3;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-form button:hover {
+  background-color: #b89e88;
+  transform: translateY(-2px);
+}
+
+/* About Section */
+.about {
+  padding: 3rem;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #6e4e37;
+  font-weight: bold;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4f4f4f;
+}
+
+/* Products Section */
+.products {
+  padding: 2rem;
+  background-color: #fff8f2;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #6e4e37;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.product-card {
+  border: 1px solid #d2bba3;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #6e4e37;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #d2bba3;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: auto;
+  font-size: 0.9rem;
+  border-radius: 8px 8px 0 0;
+}
+/* Contact Section */
+.contact {
+  padding: 3rem 2rem;
+  background-color: #f8f1ea;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #6e4e37;
+  font-weight: bold;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.8rem;
+  border: 1px solid #d2bba3;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #b89e88;
+  box-shadow: 0 0 6px rgba(184, 158, 136, 0.4);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.contact-form button {
+  padding: 0.8rem 1.5rem;
+  background-color: #c09b80;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #A52A2A;
+  transform: translateY(-3px);
+}
+
+.contact-form button:active {
+  background-color: #9e7b64;
+  transform: translateY(0);
+}
